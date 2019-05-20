@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sk</groupId>
+  <artifactId>prediction-future-data-weka</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Prediction Future Data Using Weka</name>
+  <description>This Project is example of how to use weka to predict Future Data in Some time Interval</description>
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+  
+  <dependencies>
+  
+  
+  <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+  
+  
+  <!-- Joda Time Dependency -->
+		<dependency>
+    		<groupId>joda-time</groupId>
+    		<artifactId>joda-time</artifactId>
+    		<version>2.10.2</version>
+		</dependency>
+
+
+	<!-- Weka Dependency statble Version -->
+		<dependency>
+    		<groupId>nz.ac.waikato.cms.weka</groupId>
+    		<artifactId>weka-stable</artifactId>
+    		<version>3.8.0</version>
+		</dependency>  
+		
+		<!-- Json Utils Dependency -->
+		
+			
+		<dependency>
+    		<groupId>com.google.code.gson</groupId>
+    		<artifactId>gson</artifactId>
+    		<version>2.8.5</version>
+		</dependency>
+		
+		<dependency>
+    <groupId>nz.ac.waikato.cms.weka</groupId>
+    <artifactId>timeseriesForecasting</artifactId>
+    <version>1.1.25</version>
+</dependency>
+  
+  </dependencies>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+  
+  
+</project>

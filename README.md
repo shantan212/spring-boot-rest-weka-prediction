@@ -1,8 +1,10 @@
 # spring-boot-rest-weka-prediction
 Weka Timeseries forecasting project using spring boot and rest
 
+Download the project and use `maven install`command to install. Below is the Sample Json Post Request 
+
 ```
-Sample Json Request
+Sample Json POST Request
 {
 	"numberOfPointsToPredict":Integer, [Number of data point to predict]
 	"timePeriodType":String, [Year,Month,Week,Day]

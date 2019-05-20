@@ -1,6 +1,7 @@
 # spring-boot-rest-weka-prediction
 Weka Timeseries forecasting project using spring boot and rest
 
+
 Sample Json Request
 {
 	"numberOfPointsToPredict":Integer, [Number of data point to predict]
@@ -15,6 +16,5 @@ Sample Json Request
 		"intValue":5,(Integer Value )
 		"timeLine":"01-02-2019"(Date of Dataset)
 	}
-		
 		]
 }
